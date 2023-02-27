@@ -41,16 +41,22 @@ public class Main {
 
     public static void task4() {
         System.out.println("Задача 4");
-        int[] arr = new int[]{1, 2, 6, 9, 11};
+        int[] arr = new int[]{1, 2, 6, 9, 11, 13, 18, 8, 15};
         for (int index = 0; index < arr.length; index++) {
             if (arr[index] % 2 != 0) {
-                arr[index]= arr[index]+1;
-                if (index == arr.length-1) {
+                arr[index] = arr[index] + 1;
+                if (index == arr.length - 1) {
                     System.out.println(arr[index]);
                     break;
                 }
-                System.out.print(arr[index]+ ", ");
-                } else System.out.print(arr[index]+", ");
+                System.out.print(arr[index] + ", ");
+            } else if (arr[index] % 2 == 0) {
+                if (index == arr.length - 1) {
+                    System.out.println(arr[index]);
+                    break;
+                }
+                System.out.print(arr[index] + ", ");
+            }
         }
     }
 }
