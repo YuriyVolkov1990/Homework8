@@ -45,6 +45,10 @@ public class Main {
         for (int index = 0; index < arr.length; index++) {
             if (arr[index] % 2 != 0) {
                 arr[index]= arr[index]+1;
+                if (index == arr.length-1) {
+                    System.out.println(arr[index]);
+                    break;
+                }
                 System.out.print(arr[index]+ ", ");
                 } else System.out.print(arr[index]+", ");
         }
